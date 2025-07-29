@@ -1,6 +1,6 @@
 # 🧠 FLIP.Sys.AI Incident API Health Checker
 
-This is a Python-based DevOps mini project that checks the availability and response time of the FLIP.Sys.AI incident reporting API. It simulates a basic reliability check mechanism for AI-based backend systems like those used by Innovex Solutions.
+This is a Python-based DevOps mini project that checks the availability and response time of the FLIP.Sys.AI incident reporting API. It simulates a basic reliability check mechanism for AI-based backend systems.
 
 ## 🚀 Project Goals
 
