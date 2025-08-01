@@ -1,10 +1,10 @@
 import requests
-from config FLIP_API_ENDPOINT, TEST_PAYLOAD
+from config import FLIP_API_ENDPOINT, TEST_PAYLOAD
 import time
 
 def check_api_health():
     try:
-        response = request.get(FLIP_API_ENDPOINT, timeout=5)
+        response = requests.get(FLIP_API_ENDPOINT, timeout=5)
         if response.status_code == 200:
             print(" API is reachable and responding")
         else:
@@ -14,7 +14,7 @@ def check_api_health():
 
 def test_data_submission():
     try:
-        response = request.post (FLIP_API_ENDPOINT, json=TEST_PAYLOAD, timeout=5)
+        response = requests.post (FLIP_API_ENDPOINT, json=TEST_PAYLOAD, timeout=5)
         if response.status_code == [200,201]:
            print(" Submission successful")
         else:
@@ -34,4 +34,4 @@ def run_health_checks():
     
 if __name__ == "__main__";
     run_health_check()
-    
+
